@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 0;
+    border: 2px solid black;
+}
+
+.casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casa.preta {
+    background-color: #7f7f7f;
+}
+
+.casa.branca {
+    background-color: #f0f0f0;
+}
+
+.peça {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.peça.branca {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Chess_pawn_white.svg');
+}
+
+.peça.preta {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_pawn_black.svg');
+}
+
+.peça.rei-branco {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/Chess_kraus_pawn_white.svg');
+}
+
+.peça.rei-preto {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/Chess_king_black.svg');
+}
